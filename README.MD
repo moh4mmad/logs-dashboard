@@ -160,6 +160,3 @@ To run the test unit, use the command below
 ## Deployment
 - Dockerized the application with separate containers for the frontend and backend.
 - Used docker-compose to manage the containers and create the development environment.
-
-## Conclusion
-Overall, the project was a success and met all the requirements and bonus ideas. The chosen tech stack of Django, DRF, Postgres, React, and MUI proved to be a powerful combination for creating a robust and user-friendly logs dashboard application. The project followed best practices for input validation, error handling, and logging, and was thoroughly unit tested.
