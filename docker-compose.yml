@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  # Database
+  db:
+    image: postgres:latest
+    volumes:
+      - ./postgres_data:/var/lib/postgres/data
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5432:5432'
+
+  # Django Application
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ./Dockerfile
+    working_dir: /var/www/backend
+    volumes:
+      - ./backend:/var/www/backend
+    ports:
+      - '8000:8000'
+    depends_on:
+      - "db"
+
+  # react Application
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3000:3000"
