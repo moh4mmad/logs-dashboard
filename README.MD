@@ -30,6 +30,10 @@ This is a web-based application that allows users to manage logs and provides an
 - PostgreSQL
 - Docker (optional)
 
+## Live
+- Frontend `https://logs-dashboard-frontend.vercel.app/`
+- Backend `https://logs-dashboard-backend.vercel.app/`
+
 ## Environment Set Up
 
 This application can be installed and used with or without Docker. Below are the installation and usage instructions for both methods.
