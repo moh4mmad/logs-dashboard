@@ -31,8 +31,8 @@ This is a web-based application that allows users to manage logs and provides an
 - Docker (optional)
 
 ## Live
-- Frontend `https://logs-dashboard-frontend.vercel.app/`
-- Backend `https://logs-dashboard-backend.vercel.app/`
+- Frontend https://logs-dashboard-frontend.vercel.app/
+- Backend https://logs-dashboard-backend.vercel.app/
 
 ## Environment Set Up
 
